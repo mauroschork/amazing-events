@@ -111,7 +111,9 @@ a:hover {
     margin-left: 60px;
     margin-top: 20px;
 }
-
+table{
+    background-color: coral;
+}
 @media screen and (min-width: 1024px) {
     main{
         display: flex;

@@ -7,14 +7,18 @@
 // arrays = una manera ordenada de almacenar una lista de elementos de datos bajo un solo nombre de variable.
 // set = Los objetos Set son colecciones de valores. Puede iterar a través de los elementos de un conjunto en orden de inserción. Un valor en un Set solo puede ocurrir una vez; es único en la colección del Set.
 // 
-
-
+//https://amazing-events.herokuapp.com/api/events
+ 
 
 
 
 // Card print sin comando for //
 let cardContainer = document.getElementById ('cardContainer')
-
+const api = "https://amazing-events.herokuapp.com/api/events";
+fetch(api)
+.then(response => response.json())
+.then(data => mainArray(data))
+const mainArray = (data) => {
 function cardPrinter (print){
 
 
@@ -38,15 +42,8 @@ function cardPrinter (print){
   data.events.forEach(element => {
     cardPrinter (element)
   });                              
-// let today = data.currentDate
-// let past =
-// data.events.forEach(pasado => {
-//     if(parseInt(today)> parseInt(pasado.date)){} 
-// })
-                                   
 
-
-
+                                
 //-------checkselect--------//
 
 
@@ -134,3 +131,4 @@ function filtro(){
 })    
 }
 filtro()
+}
