@@ -35,112 +35,64 @@
                 <h2 style="color:black ;">Stats</h2>
                 <a class="nextPrevius" href="./home.html">></a>
     </div>
-    <main>
-        <div class="container d-flex justify-content-center align-content-center mt-1 flex-wrap tableStats">
-            <table class="table">
-                <thead>
-
-                    <th class="containerTitle" scope="col" colspan="4">Events Statistics</th>
-
-
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="containerTable">Events with the highest percentage of attendance</td>
-                        <td class="containerTable">Events with lowest percentage of attendance of attendance</td>
-                        <td class="containerTable">Events with larger capacity</td>
-                    </tr>
-                    <tr>
-                        <td class="containerTable"></td>
-                        <td class="containerTable"></td>
-                        <td class="containerTable"></td>
-                    </tr>
-                </tbody>
-                <thead>
-                    <tr>
-                        <th class="containerTitle" scope="col" colspan="4">Upcoming events statistics by category</th>
-                    </tr>
-
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="containerTable">Categories</td>
-                        <td class="containerTable">Revenues</td>
-                        <td class="containerTable">Percentage of attendance</td>
-                    </tr>
-                    <tr>
-                        <td class="containerTable"></td>
-                        <td class="containerTable"></td>
-                        <td class="containerTable"></td>
-                    </tr>
-                    <tr>
-                        <td class="containerTable"></td>
-                        <td class="containerTable"></td>
-                        <td class="containerTable"></td>
-                    </tr>
-                    <tr>
-                        <td class="containerTable"></td>
-                        <td class="containerTable"></td>
-                        <td class="containerTable"></td>
-                    </tr>
-                    <tr>
-                        <th class="containerTitle" scope="col" colspan="4">Past Events statistic by category</th>
-                    </tr>
-                    </thead>
-                <tbody>
-                    <tr>
-                        <td class="containerTable">Categories</td>
-                        <td class="containerTable">Revenues</td>
-                        <td class="containerTable">Percentage of attendance</td>
-                    </tr>
-                    <tr>
-                        <td class="containerTable"></td>
-                        <td class="containerTable"></td>
-                        <td class="containerTable"></td>
-                    </tr>
-                    <tr>
-                        <td class="containerTable"></td>
-                        <td class="containerTable"></td>
-                        <td class="containerTable"></td>
-                    </tr>
-                    <tr>
-                        <td class="containerTable"></td>
-                        <td class="containerTable"></td>
-                        <td class="containerTable"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
+    <main class="category-container py-5 d-flex flex-wrap">
+        <!--tabla 1-->
+        <table class="table container">
+            <thead>
+                <tr>
+                    <th colspan="3">Events Statistics</th>
+                </tr>
+            </thead>
+            <tbody id="homeTable">
+            </tbody>
+        </table>
+        <!--tabla 2-->
+        <table class="table container">
+            <thead>
+                <tr>
+                    <th colspan="3">Upcoming events statistics by category</th>
+                </tr>
+            </thead>
+            <tbody id="upcomingTable">
+            </tbody>
+        </table>
+        <!--tabla 3-->
+        <table class="table container mb-0">
+            <thead>
+                <tr>
+                    <th colspan="3">Past events statistic by category</th>
+                </tr>
+            </thead>
+            <tbody id="pastTable">
+            </tbody>
+        </table>
     </main>
-
-
-    <footer class="bg-secondary container-fluid d-flex align-content-center footer footerStats"
-        style="text-align:center; height: 38px;">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="container-fluid d-flex justify-content-start icons">
-                <a href="https://www.instagram.com/">
-                    <img src="https://cdn.freebiesupply.com/images/large/2x/instagram-icon-white-on-black-circle.png"
-                        alt="" width="40px">
-                </a>
-                <a href="https://www.facebook.com/">
-                    <img src="https://cdn-icons-png.flaticon.com/512/20/20673.png" alt="" width="28px">
-                </a>
-                <a href="https://web.whatsapp.com/">
-                    <img src="http://assets.stickpng.com/images/5a4e2ef62da5ad73df7efe6e.png" alt="" width="28px">
-                </a>
+        <footer class="bg-secondary container-fluid d-flex align-content-center footer footerStats"
+            style="text-align:center; height: 38px;">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="container-fluid d-flex justify-content-start icons">
+                    <a href="https://www.instagram.com/">
+                        <img src="https://cdn.freebiesupply.com/images/large/2x/instagram-icon-white-on-black-circle.png"
+                            alt="" width="40px">
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <img src="https://cdn-icons-png.flaticon.com/512/20/20673.png" alt="" width="28px">
+                    </a>
+                    <a href="https://web.whatsapp.com/">
+                        <img src="http://assets.stickpng.com/images/5a4e2ef62da5ad73df7efe6e.png" alt="" width="28px">
+                    </a>
+                </div>
+                <div class="align-items-center">
+                    <h5>Cohort</h5>
+                </div>
             </div>
-            <div class="align-items-center">
-                <h5>Cohort</h5>
-            </div>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
-        crossorigin="anonymous"></script>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+            integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+            integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+            crossorigin="anonymous"></script>
         <script src="./stats.js"></script>
 </body>
 

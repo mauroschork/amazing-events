@@ -11,7 +11,7 @@ fetch(api)
     function cardPrinter(print) {
 
 
-        let divCard = document.createElement('div')
+         let divCard = document.createElement('div')
         divCard.classname = 'card gap-2';
         divCard.style.width = '19rem'
         divCard.style.height = "25rem"
